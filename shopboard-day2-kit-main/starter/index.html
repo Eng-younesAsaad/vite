@@ -1,0 +1,444 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRUMÉA · Artisan Bakery &amp; Cookies</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/styles/tokens.css" />
+    <link rel="stylesheet" href="./src/styles/main.css" />
+  </head>
+  <body>
+    <!-- ─── 1. Header ─── -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="/" class="site-logo" aria-label="CRUMÉA Homepage">CRUMÉA</a>
+
+        <nav class="site-nav" aria-label="Main Navigation">
+          <ul class="site-nav-list">
+            <li><a href="#" class="site-nav-link">Home</a></li>
+            <li><a href="#shop" class="site-nav-link">Shop</a></li>
+            <li><a href="#shop" class="site-nav-link" data-category-filter="Cookies">Cookies</a></li>
+            <li><a href="#shop" class="site-nav-link" data-category-filter="Biscuits">Biscuits</a></li>
+            <li><a href="#shop" class="site-nav-link" data-category-filter="Pastries">Bakery</a></li>
+            <li><a href="#story" class="site-nav-link">Our Story</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-actions">
+          <button
+            type="button"
+            id="cart-toggle"
+            class="header-btn"
+            aria-label="Open shopping cart"
+          >
+            <span class="cart-icon-wrap">
+              🛒 CART
+              <span id="cart-count" class="cart-badge-count">0</span>
+            </span>
+          </button>
+          <a href="#shop" class="btn-primary btn-order-now">Order Now</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- ─── 2. Hero Section ─── -->
+      <section class="hero-section" aria-labelledby="hero-title">
+        <div class="container hero-grid">
+          <div class="hero-content">
+            <p class="section-eyebrow">FRESH FROM THE OVEN</p>
+            <h1 id="hero-title" class="hero-title">BAKED TO MAKE YOU SMILE.</h1>
+            <p class="hero-description">
+              Golden edges, soft centers and irresistible little moments — freshly baked for every craving.
+            </p>
+            <div class="hero-actions">
+              <a href="#shop" class="btn-primary">Shop the Collection</a>
+              <a href="#story" class="btn-secondary">Discover Cruméa</a>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <img
+              src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&w=800&q=80"
+              alt="Warm, freshly baked artisan chocolate chip cookie with molten chocolate pools"
+              class="hero-cookie-img"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- ─── 3. Category Strip Section ─── -->
+      <section class="category-strip-section" aria-label="Browse Bakery Categories">
+        <div class="container">
+          <div class="category-strip-grid">
+            <button type="button" class="category-card" data-category-filter="Cookies" aria-label="Explore Premium Cookies">
+              <div class="category-card-img-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&w=200&q=80"
+                  alt="Golden chocolate chip cookies"
+                  class="category-card-img"
+                />
+              </div>
+              <h2 class="category-card-title">Premium Cookies</h2>
+              <span class="category-card-link">Explore</span>
+            </button>
+
+            <button type="button" class="category-card" data-category-filter="Biscuits" aria-label="Explore Artisan Biscuits">
+              <div class="category-card-img-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1597733336794-12d05021d510?auto=format&fit=crop&w=200&q=80"
+                  alt="Artisan almond butter biscuits"
+                  class="category-card-img"
+                />
+              </div>
+              <h2 class="category-card-title">Artisan Biscuits</h2>
+              <span class="category-card-link">Explore</span>
+            </button>
+
+            <button type="button" class="category-card" data-category-filter="Brownies" aria-label="Explore Fudgy Brownies">
+              <div class="category-card-img-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1607920591413-4ec007e70023?auto=format&fit=crop&w=200&q=80"
+                  alt="Rich chocolate walnut brownie slice"
+                  class="category-card-img"
+                />
+              </div>
+              <h2 class="category-card-title">Brownies</h2>
+              <span class="category-card-link">Explore</span>
+            </button>
+
+            <button type="button" class="category-card" data-category-filter="Pastries" aria-label="Explore Fresh Pastries">
+              <div class="category-card-img-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1555507036-ab1f4038024a?auto=format&fit=crop&w=200&q=80"
+                  alt="Fresh flaky butter croissant"
+                  class="category-card-img"
+                />
+              </div>
+              <h2 class="category-card-title">Pastries</h2>
+              <span class="category-card-link">Explore</span>
+            </button>
+
+            <button type="button" class="category-card" data-category-filter="Cakes" aria-label="Explore Artisan Cakes">
+              <div class="category-card-img-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=200&q=80"
+                  alt="Belgian chocolate layer cake slice"
+                  class="category-card-img"
+                />
+              </div>
+              <h2 class="category-card-title">Cakes</h2>
+              <span class="category-card-link">Explore</span>
+            </button>
+
+            <button type="button" class="category-card" data-category-filter="Gift Boxes" aria-label="Explore Gift Boxes">
+              <div class="category-card-img-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1548848221-0c2e497ed557?auto=format&fit=crop&w=200&q=80"
+                  alt="Elegant bakery gift box"
+                  class="category-card-img"
+                />
+              </div>
+              <h2 class="category-card-title">Gift Boxes</h2>
+              <span class="category-card-link">Explore</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- ─── 4. Our Story Section ─── -->
+      <section id="story" class="story-section" aria-labelledby="story-title">
+        <div class="container story-grid">
+          <div class="story-content">
+            <p class="section-eyebrow">OUR STORY</p>
+            <h2 id="story-title" class="serif-heading story-title">Made with passion. Baked to perfection.</h2>
+            <p class="story-desc">
+              At Cruméa, every treat is crafted with the finest ingredients and a whole lot of love. From our oven to your heart — this is more than baking, it is pure happiness shared one crumb at a time.
+            </p>
+            <div>
+              <a href="#shop" class="btn-outline-dark">Discover Our Story</a>
+            </div>
+          </div>
+          <div class="story-visual">
+            <img
+              src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=800&q=80"
+              alt="Artisan baker dusting organic flour over handmade pastry dough"
+              class="story-img"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- ─── 5. Interactive Shop Section ─── -->
+      <section id="shop" class="shop-section" aria-labelledby="shop-title">
+        <div class="container">
+          <div class="shop-header">
+            <div>
+              <p class="section-eyebrow">FEATURED COLLECTIONS</p>
+              <h2 id="shop-title" class="serif-heading shop-title">Handcrafted. Heartfelt. Irresistible.</h2>
+            </div>
+          </div>
+
+          <!-- Accessible Filter Bar with explicit labels for every control -->
+          <div class="filter-bar" role="search" aria-label="Filter and sort products">
+            <div class="filter-group">
+              <label for="search-input" class="filter-label">Search Treats</label>
+              <input
+                id="search-input"
+                type="search"
+                class="filter-input"
+                placeholder="Try &quot;chocolate&quot;, &quot;croissant&quot;..."
+              />
+            </div>
+
+            <div class="filter-group">
+              <label for="category-select" class="filter-label">Category</label>
+              <select id="category-select" class="filter-select">
+                <option value="all">All Categories</option>
+                <option value="Cookies">Cookies</option>
+                <option value="Biscuits">Biscuits</option>
+                <option value="Brownies">Brownies</option>
+                <option value="Pastries">Pastries</option>
+                <option value="Cakes">Cakes</option>
+                <option value="Gift Boxes">Gift Boxes</option>
+              </select>
+            </div>
+
+            <div class="filter-group">
+              <label for="sort-select" class="filter-label">Sort By</label>
+              <select id="sort-select" class="filter-select">
+                <option value="default">Default Order</option>
+                <option value="price-asc">Price: Low to High</option>
+                <option value="price-desc">Price: High to Low</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Dynamic Product Grid rendered from src/data.js -->
+          <div id="product-grid" class="product-grid" aria-live="polite"></div>
+        </div>
+      </section>
+
+      <!-- ─── 6. Gifting Banner Section ─── -->
+      <section class="gifting-section" aria-labelledby="gifting-title">
+        <div class="container gifting-grid">
+          <div class="gifting-content">
+            <p class="section-eyebrow">BOXED WITH LOVE</p>
+            <h2 id="gifting-title" class="gifting-title">Perfect for gifting. Perfect for sharing.</h2>
+            <p class="gifting-desc">
+              Whether celebrating a milestone or sending a sweet surprise, our luxury embossed gift boxes deliver unforgettable bakery moments.
+            </p>
+            <button
+              type="button"
+              class="btn-primary"
+              data-category-filter="Gift Boxes"
+              aria-label="Filter products to Gift Boxes"
+            >
+              Explore Gift Boxes
+            </button>
+          </div>
+          <div class="gifting-visual">
+            <img
+              src="https://images.unsplash.com/photo-1548848221-0c2e497ed557?auto=format&fit=crop&w=700&q=80"
+              alt="Luxury CRUMÉA artisan gift box tied with ribbon and filled with gourmet cookies"
+              class="gifting-img"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- ─── 7. Quality Ingredients Section ─── -->
+      <section class="ingredients-section" aria-labelledby="ingredients-title">
+        <div class="container">
+          <div class="ingredients-header">
+            <p class="section-eyebrow">QUALITY YOU CAN TASTE</p>
+            <h2 id="ingredients-title" class="serif-heading ingredients-title">
+              Simple ingredients. Extraordinary taste.
+            </h2>
+          </div>
+
+          <div class="ingredients-grid">
+            <div class="ingredient-feature">
+              <div class="ingredient-icon-wrap" aria-hidden="true">🌾</div>
+              <h3 class="ingredient-name">Premium Ingredients</h3>
+              <p class="ingredient-detail">Single-origin cocoa &amp; French butter</p>
+            </div>
+
+            <div class="ingredient-feature">
+              <div class="ingredient-icon-wrap" aria-hidden="true">☀️</div>
+              <h3 class="ingredient-name">Made Daily Fresh</h3>
+              <p class="ingredient-detail">Baked every morning before dawn</p>
+            </div>
+
+            <div class="ingredient-feature">
+              <div class="ingredient-icon-wrap" aria-hidden="true">🍃</div>
+              <h3 class="ingredient-name">No Preservatives</h3>
+              <p class="ingredient-detail">100% natural and additive-free</p>
+            </div>
+
+            <div class="ingredient-feature">
+              <div class="ingredient-icon-wrap" aria-hidden="true">❤️</div>
+              <h3 class="ingredient-name">Baked with Love</h3>
+              <p class="ingredient-detail">Crafted by master artisan bakers</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ─── 8. Customer Reviews Section ─── -->
+      <section class="reviews-section" aria-labelledby="reviews-title">
+        <div class="container">
+          <div class="reviews-header">
+            <p class="section-eyebrow">LOVED BY MANY</p>
+            <h2 id="reviews-title" class="serif-heading reviews-title">Real smiles. Real reviews.</h2>
+          </div>
+
+          <div class="reviews-grid">
+            <article class="review-card">
+              <div class="review-stars" aria-label="Rated 5 out of 5 stars">★★★★★</div>
+              <blockquote class="review-quote">
+                &ldquo;The cookies are hands down the best I have ever had. So soft, decadent, and delightfully fresh!&rdquo;
+              </blockquote>
+              <p class="review-author">— Ayesha R.</p>
+            </article>
+
+            <article class="review-card">
+              <div class="review-stars" aria-label="Rated 5 out of 5 stars">★★★★★</div>
+              <blockquote class="review-quote">
+                &ldquo;Beautiful packaging, intoxicating bakery aroma, and super fresh. Highly recommended for gifting!&rdquo;
+              </blockquote>
+              <p class="review-author">— Hamza K.</p>
+            </article>
+
+            <article class="review-card">
+              <div class="review-stars" aria-label="Rated 5 out of 5 stars">★★★★★</div>
+              <blockquote class="review-quote">
+                &ldquo;Cruméa never disappoints. My absolute go-to for family weekends and every celebration.&rdquo;
+              </blockquote>
+              <p class="review-author">— Sara M.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ─── 9. Newsletter Section ─── -->
+      <section class="newsletter-section" aria-labelledby="newsletter-title">
+        <div class="container newsletter-inner">
+          <div>
+            <h2 id="newsletter-title" class="newsletter-title">STAY IN THE LOOP</h2>
+            <p class="newsletter-text">Get the sweetest updates, seasonal menu releases &amp; exclusive offers.</p>
+          </div>
+          <form class="newsletter-form" action="#" method="post">
+            <div class="newsletter-input-group">
+              <label for="newsletter-email" class="filter-label">Your Email Address</label>
+              <input
+                id="newsletter-email"
+                type="email"
+                class="newsletter-input"
+                placeholder="Enter your email"
+                required
+              />
+            </div>
+            <button type="submit" class="newsletter-btn">Subscribe</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- ─── 10. Interactive Cart Drawer & Overlay ─── -->
+    <div id="cart-overlay" class="cart-overlay" aria-hidden="true"></div>
+
+    <aside
+      id="cart-drawer"
+      class="cart-drawer"
+      aria-label="Shopping Cart Drawer"
+      aria-hidden="true"
+    >
+      <div class="cart-drawer-header">
+        <h2 class="cart-drawer-title">Your Cart</h2>
+        <button
+          type="button"
+          id="close-cart-btn"
+          class="cart-close-btn"
+          aria-label="Close shopping cart drawer"
+        >
+          &times;
+        </button>
+      </div>
+
+      <div id="cart-items" class="cart-items-list" aria-live="polite"></div>
+
+      <div class="cart-drawer-footer">
+        <div class="cart-summary-line">
+          <span>Total:</span>
+          <span id="cart-total">$0.00</span>
+        </div>
+        <button type="button" class="btn-primary" aria-label="Proceed to Checkout">
+          Checkout Now
+        </button>
+        <button type="button" id="clear-cart-btn" class="btn-clear-cart" aria-label="Clear all items from cart">
+          Clear Entire Cart
+        </button>
+      </div>
+    </aside>
+
+    <!-- ─── 11. Footer ─── -->
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <p class="footer-logo">CRUMÉA</p>
+          <p class="footer-tagline">BAKED TO MAKE YOU SMILE.</p>
+        </div>
+
+        <div class="footer-cols">
+          <div>
+            <h3 class="footer-col-title">Shop</h3>
+            <ul class="footer-links">
+              <li><a href="#shop">All Products</a></li>
+              <li><a href="#shop" data-category-filter="Cookies">Cookies</a></li>
+              <li><a href="#shop" data-category-filter="Biscuits">Biscuits</a></li>
+              <li><a href="#shop" data-category-filter="Brownies">Brownies</a></li>
+              <li><a href="#shop" data-category-filter="Pastries">Pastries</a></li>
+              <li><a href="#shop" data-category-filter="Cakes">Cakes</a></li>
+              <li><a href="#shop" data-category-filter="Gift Boxes">Gift Boxes</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="footer-col-title">Company</h3>
+            <ul class="footer-links">
+              <li><a href="#story">Our Story</a></li>
+              <li><a href="#story">Ingredients</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="footer-col-title">Customer Care</h3>
+            <ul class="footer-links">
+              <li><a href="#">Shipping &amp; Delivery</a></li>
+              <li><a href="#">Returns &amp; Refunds</a></li>
+              <li><a href="#">Terms &amp; Conditions</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="mailto:hello@crumea.pk">hello@crumea.pk</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="container footer-bottom">
+        <p>&copy; 2026 CRUMÉA Artisan Bakery. Handcrafted with passion. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Modular Application Entry Point -->
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>

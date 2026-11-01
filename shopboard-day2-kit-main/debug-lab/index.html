@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ShopBoard · Debugging lab</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <p class="logo">ShopBoard</p>
+      <p class="cart">Cart: <span id="cart-count">0</span> items · <span id="cart-total">$0</span></p>
+    </header>
+    <main>
+      <h1>Find something you like</h1>
+      <section class="controls" aria-label="Search and filters">
+        <label>Search <input id="search" type="search" placeholder="Try “bag”" /></label>
+        <label>Category
+          <select id="category">
+            <option value="all">All</option>
+            <option value="Bags">Bags</option>
+            <option value="Shoes">Shoes</option>
+            <option value="Accessories">Accessories</option>
+          </select>
+        </label>
+        <label>Sort
+          <select id="sort">
+            <option value="none">Default</option>
+            <option value="price-asc">Price: low to high</option>
+            <option value="price-desc">Price: high to low</option>
+          </select>
+        </label>
+      </section>
+      <section id="products" class="grid" aria-label="Products"></section>
+    </main>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>

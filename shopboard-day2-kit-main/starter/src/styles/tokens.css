@@ -1,0 +1,73 @@
+/* tokens.css — Design tokens for the CRUMÉA luxury bakery palette. */
+:root {
+  /* ─── Dark palette ─── */
+  --clr-espresso:     #1A110B;
+  --clr-chocolate:    #231710;
+  --clr-mocha:        #2D1E14;
+  --clr-cocoa:        #3D2E1F;
+
+  /* ─── Warm palette ─── */
+  --clr-cream:        #FAF6F0;
+  --clr-ivory:        #F3ECE1;
+  --clr-linen:        #EDE5D8;
+  --clr-sand:         #DDD3C3;
+
+  /* ─── Accent ─── */
+  --clr-gold:         #D4A977;
+  --clr-gold-dark:    #C89B68;
+  --clr-gold-light:   #E0BF9A;
+
+  /* ─── Semantic text ─── */
+  --clr-text:         #1A110B;
+  --clr-text-body:    #4A3F35;
+  --clr-text-muted:   #8A7E72;
+  --clr-text-light:   #FAF6F0;
+  --clr-danger:       #B91C1C;
+
+  /* ─── Typography ─── */
+  --ff-heading: "Cormorant Garamond", Georgia, serif;
+  --ff-body:    "Plus Jakarta Sans", system-ui, sans-serif;
+
+  --fs-xs:   0.75rem;
+  --fs-sm:   0.875rem;
+  --fs-base: 1rem;
+  --fs-md:   1.125rem;
+  --fs-lg:   1.5rem;
+  --fs-xl:   2rem;
+  --fs-2xl:  2.5rem;
+  --fs-3xl:  3.25rem;
+
+  --fw-light:    300;
+  --fw-regular:  400;
+  --fw-medium:   500;
+  --fw-semi:     600;
+  --fw-bold:     700;
+
+  /* ─── Spacing ─── */
+  --sp-xs:  4px;
+  --sp-sm:  8px;
+  --sp-md:  16px;
+  --sp-lg:  24px;
+  --sp-xl:  32px;
+  --sp-2xl: 48px;
+  --sp-3xl: 64px;
+  --sp-4xl: 96px;
+
+  /* ─── Radii ─── */
+  --r-sm:   4px;
+  --r-md:   8px;
+  --r-lg:   12px;
+  --r-xl:   24px;
+  --r-full: 50%;
+
+  /* ─── Shadows ─── */
+  --shadow-sm: 0 1px 3px rgba(26,17,11,.06);
+  --shadow-md: 0 4px 12px rgba(26,17,11,.08);
+  --shadow-lg: 0 8px 24px rgba(26,17,11,.12);
+
+  /* ─── Transitions ─── */
+  --ease-fast: 150ms ease;
+  --ease-base: 250ms ease;
+  --ease-slow: 400ms ease;
+}
+
